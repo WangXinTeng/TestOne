@@ -1,0 +1,43 @@
+﻿//初始配置
+git config --global user.name "昵称"
+git config --global user.email "email@gmail.com"
+git config --global color.ui true
+
+//通过git init命令把这个目录变成Git可以管理的仓库
+git init
+
+//把文件添加到仓库
+git add 文件名
+
+//一次性将工作区所有修改添加至暂存区
+git add .
+
+//把文件提交到仓库
+git commit -m "注释"
+
+//查看当前仓库状态
+git status
+
+//不加参数即默认比较工作区与暂存区
+git diff
+
+//查看历史提交记录
+git log
+
+//查看简化的历史提交记录
+git log --pretty=oneline
+
+//记录每一次命令
+git reflog
+
+//回退至上一版本
+git reset --hard HEAD^
+
+//上上一版本
+git reset --hard HEAD^^
+
+//上一百版本
+git reset --hard HEAD~100
+
+//回退至任意版本
+git reset --hard 版本号(或版本号前7位)
